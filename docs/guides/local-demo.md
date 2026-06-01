@@ -48,7 +48,7 @@ make h5
 2. Show the admin dashboard and explain the operational gates: completion metrics,
    stuck owners, support, alerts, manual work, and retry.
 3. Show H5 story/audio citation behavior and explain the evidence ledger.
-4. Open `docs/ARCHITECTURE.md` and explain the API, worker, provider router,
+4. Open `docs/architecture.md` and explain the API, worker, provider router,
    mini program, and compliance boundaries.
 5. End with verification: CI, tests, migrations, production readiness checks, and
    external evidence gates.

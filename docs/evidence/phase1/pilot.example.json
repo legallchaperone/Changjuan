@@ -23,7 +23,7 @@
   "refund_abandon_reason_export_path": "docs/evidence/phase1/refund-abandon-reasons.json",
   "refund_abandon_reason_export_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
   "retrospective_completed": true,
-  "retrospective_path": "docs/phase1-retrospective.md",
+  "retrospective_path": "docs/reports/phase1-retrospective.md",
   "retrospective_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
   "phase2_decision": "go",
   "segment_counts": {

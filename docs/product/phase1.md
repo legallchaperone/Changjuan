@@ -1250,7 +1250,7 @@ DoD：
 * 完成率、推荐率、NPS、重大事实错误投诉率可导出
 * 单户人工处理时长可导出
 * 退款/放弃原因分类
-* 形成 `docs/phase1-retrospective.md`
+* 形成 `docs/reports/phase1-retrospective.md`
 * Go/No-Go 结论明确
 
 旧计划也把 Sprint 15–16 设置为 100 户 Pilot，并要求完成度统计、退款处理、复盘报告和 Phase 2 准备；v3 将 pilot 指标与 Go/No-Go 直接绑定。

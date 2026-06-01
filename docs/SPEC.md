@@ -1,1 +1,1 @@
-../phase1.md
+product/phase1.md

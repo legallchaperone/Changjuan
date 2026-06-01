@@ -41,7 +41,7 @@ look closer to a real launch system than a demo app.
 ## Best Files to Show
 
 - `README.md` for the project overview.
-- `docs/ARCHITECTURE.md` for system design.
+- `docs/architecture.md` for system design.
 - `apps/api/changjuan_api/main.py` for API boundaries and workflow enforcement.
 - `apps/api/changjuan_api/sqlalchemy_store.py` for persistence coverage.
 - `packages/changjuan_core/ai` for AI contracts and verifier behavior.

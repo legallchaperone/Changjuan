@@ -114,4 +114,4 @@ completion still depends on artifacts outside this worktree:
 - production observability, OSS/KMS, backup/restore, and purge drills
 
 Those gates are documented in
-[docs/phase1-completion-audit.md](phase1-completion-audit.md).
+[reports/phase1-completion-audit.md](reports/phase1-completion-audit.md).

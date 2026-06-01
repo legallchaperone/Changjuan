@@ -1,6 +1,6 @@
 # Changjuan
 
-[![CI](https://github.com/legallchaperone/changjuan/actions/workflows/ci.yml/badge.svg)](https://github.com/legallchaperone/changjuan/actions/workflows/ci.yml)
+[![CI](https://github.com/legallchaperone/Changjuan/actions/workflows/ci.yml/badge.svg)](https://github.com/legallchaperone/Changjuan/actions/workflows/ci.yml)
 
 Changjuan is an evidence-grounded family story platform. It turns elder interviews,
 family corrections, consent records, and private sharing into a traceable workflow:
@@ -40,7 +40,7 @@ flowchart LR
   Store --> Evidence
 ```
 
-See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for the component map and key
+See [docs/architecture.md](docs/architecture.md) for the component map and key
 engineering decisions.
 
 ## Monorepo Layout
@@ -58,7 +58,7 @@ engineering decisions.
 | `packages/clients` | Typed API client used by frontend apps |
 | `infra` | Docker Compose and Alembic migrations |
 | `tests` | Unit, integration, and Phase 1 E2E contract coverage |
-| `docs` | ADRs, runbooks, completion audit, delivery map, evidence templates |
+| `docs` | Architecture, product specs, reports, guides, ADRs, runbooks, evidence templates |
 
 ## Tech Stack
 
@@ -115,7 +115,7 @@ CI runs Python tests, Ruff, lockfile validation, evidence-template validation,
 TypeScript typechecks, both Next.js builds, and `npm audit --audit-level=moderate`.
 
 The latest local completion audit is in
-[docs/phase1-completion-audit.md](docs/phase1-completion-audit.md). It separates
+[docs/reports/phase1-completion-audit.md](docs/reports/phase1-completion-audit.md). It separates
 what is proven in this worktree from production/pilot evidence that must come from
 real provider, WeChat QA, legal, observability, and 100-household pilot artifacts.
 
@@ -128,14 +128,14 @@ real provider, WeChat QA, legal, observability, and 100-household pilot artifact
   `http://localhost:3001/entry/fallback?project_id=proj_phase1_001`
 - API health: `http://localhost:8000/healthz`
 
-See [docs/LOCAL_DEMO.md](docs/LOCAL_DEMO.md) for a concise demo script.
+See [docs/guides/local-demo.md](docs/guides/local-demo.md) for a concise demo script.
 
 ## Resume Notes
 
 This project is a strong resume item because it shows end-to-end product and
 systems work: contracts, persistence, typed clients, admin operations, AI workflow
 boundaries, evidence gating, compliance, and CI. A ready-to-use interview summary
-is in [docs/PORTFOLIO.md](docs/PORTFOLIO.md).
+is in [docs/guides/portfolio.md](docs/guides/portfolio.md).
 
 ## Security and Data Handling
 
