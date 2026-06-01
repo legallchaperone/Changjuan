@@ -1,0 +1,23 @@
+<view class="page">
+  <view class="hero panel">
+    <text class="title">把爸妈讲过的话，认真记下来</text>
+    <text class="body">Phase 1 支持照片上传、采访发起、家人核验、故事预览、分享设置、隐私导出和删除。</text>
+  </view>
+  <view class="panel form">
+    <input placeholder="昵称" value="{{nickname}}" bindinput="onNickname" />
+    <button class="button" loading="{{loading}}" bindtap="login">微信登录</button>
+    <text wx:if="{{userId}}" class="hint">用户：{{userId}}</text>
+  </view>
+  <view class="panel form">
+    <input placeholder="project_id" value="{{projectId}}" bindinput="onProjectId" />
+    <input placeholder="story_page_id" value="{{storyPageId}}" bindinput="onStoryPageId" />
+  </view>
+  <navigator class="button" url="/pages/project/project">创建项目</navigator>
+  <navigator class="button secondary" url="/pages/interview/interview?project_id={{projectId}}">采访</navigator>
+  <navigator class="button secondary" url="/pages/corrections/corrections?project_id={{projectId}}">家人核验</navigator>
+  <navigator class="button secondary" url="/pages/story/story?project_id={{projectId}}&story_page_id={{storyPageId}}">故事预览</navigator>
+  <navigator class="button secondary" url="/pages/privacy/privacy">隐私 / 导出 / 删除</navigator>
+  <navigator class="button secondary" url="/pages/privacy/privacy?project_id={{projectId}}">项目隐私 / 导出 / 删除</navigator>
+  <view wx:if="{{statusMessage}}" class="panel status">{{statusMessage}}</view>
+  <view wx:if="{{errorMessage}}" class="panel error">{{errorMessage}}</view>
+</view>

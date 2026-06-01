@@ -1,0 +1,12 @@
+{
+  "appid": "touristappid",
+  "projectname": "changjuan-phase1",
+  "miniprogramRoot": "./",
+  "compileType": "miniprogram",
+  "setting": {
+    "es6": true,
+    "minified": true,
+    "postcss": true,
+    "urlCheck": true
+  }
+}

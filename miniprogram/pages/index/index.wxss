@@ -1,0 +1,39 @@
+.hero {
+  margin-bottom: 28rpx;
+}
+.title {
+  display: block;
+  font-size: 48rpx;
+  line-height: 1.16;
+  font-weight: 800;
+}
+.body {
+  display: block;
+  margin-top: 20rpx;
+  color: #667069;
+  line-height: 1.7;
+}
+.form {
+  display: grid;
+  gap: 18rpx;
+  margin-bottom: 20rpx;
+}
+input {
+  height: 88rpx;
+  border-bottom: 1rpx solid #dedbd1;
+}
+.button {
+  margin-top: 20rpx;
+}
+.hint {
+  color: #6d746c;
+  font-size: 24rpx;
+}
+.status {
+  margin-top: 20rpx;
+  color: #285c3a;
+}
+.error {
+  margin-top: 20rpx;
+  color: #a5453d;
+}

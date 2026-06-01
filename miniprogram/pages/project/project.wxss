@@ -1,0 +1,48 @@
+.form {
+  display: grid;
+  gap: 20rpx;
+}
+input {
+  height: 88rpx;
+  border-bottom: 1rpx solid #dedbd1;
+}
+.result {
+  margin-top: 20rpx;
+  display: grid;
+  gap: 12rpx;
+}
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16rpx;
+}
+.secondary {
+  background: #ece7dc;
+  color: #2f332f;
+}
+.hint {
+  color: #6d746c;
+  font-size: 24rpx;
+  line-height: 1.5;
+}
+.photo-row {
+  display: grid;
+  grid-template-columns: 1fr 128rpx;
+  gap: 16rpx;
+  align-items: center;
+  padding: 16rpx 0;
+  border-top: 1rpx solid #e6e0d4;
+}
+.photo-copy {
+  display: grid;
+  gap: 4rpx;
+  min-width: 0;
+}
+.status {
+  margin-top: 20rpx;
+  color: #285c3a;
+}
+.error {
+  margin-top: 20rpx;
+  color: #a5453d;
+}

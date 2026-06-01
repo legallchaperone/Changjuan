@@ -1,0 +1,26 @@
+<view class="page">
+  <view class="panel">
+    <text class="title">隐私 / 导出 / 删除</text>
+    <text class="body">用户故事属于用户。删除后前端立即不可见，T+7 清理 DB 记录与 OSS 对象，audit log 脱敏保留。</text>
+    <input
+      class="project-input"
+      placeholder="project_id"
+      value="{{projectId}}"
+      bindinput="onProjectId"
+    />
+  </view>
+  <view wx:if="{{errorMessage}}" class="panel error">
+    <text>{{errorMessage}}</text>
+  </view>
+  <view wx:if="{{exportSummary}}" class="panel result">
+    <text>{{exportSummary}}</text>
+  </view>
+  <view wx:if="{{deletionRequestId}}" class="panel result">
+    <text>删除请求：{{deletionRequestId}}</text>
+    <text>状态：{{deletionStatus}}</text>
+    <text>执行时间：{{executeAfterAt}}</text>
+  </view>
+  <button class="button secondary" loading="{{loading}}" bindtap="exportProject">导出项目</button>
+  <button class="button secondary" loading="{{loading}}" bindtap="checkDeletionStatus">查询删除状态</button>
+  <button class="button danger" loading="{{loading}}" bindtap="requestDeletion">请求删除</button>
+</view>

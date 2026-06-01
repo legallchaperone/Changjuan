@@ -1,0 +1,35 @@
+.title {
+  display: block;
+  font-size: 40rpx;
+  font-weight: 800;
+}
+.body {
+  display: block;
+  margin-top: 18rpx;
+  color: #667069;
+  line-height: 1.7;
+}
+.button {
+  margin-top: 20rpx;
+}
+.project-input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 76rpx;
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+  border: 1rpx solid #d9d0c3;
+  border-radius: 8rpx;
+  background: #fffaf2;
+}
+.result text {
+  display: block;
+  margin-top: 8rpx;
+}
+.error {
+  color: #a5453d;
+}
+.danger {
+  background: #a5453d;
+  color: #ffffff;
+}

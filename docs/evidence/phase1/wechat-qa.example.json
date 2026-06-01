@@ -1,0 +1,127 @@
+{
+  "devtools_build_ok": true,
+  "devtools_build_id": "wechat_devtools_YYYYMMDD_001",
+  "qa_run_id": "wechat_qa_YYYYMMDD_001",
+  "qa_report_path": "docs/evidence/phase1/wechat-qa-report.md",
+  "qa_report_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "wx_login_ok": true,
+  "project_creation_ok": true,
+  "photo_upload_ok": true,
+  "record_permission_ok": true,
+  "upload_ok": true,
+  "family_correction_ok": true,
+  "story_preview_ok": true,
+  "share_settings_ok": true,
+  "privacy_export_delete_ok": true,
+  "navigation_ok": true,
+  "devices": [
+    {
+      "name": "iPhone 13",
+      "platform": "ios",
+      "passed": true,
+      "workflow_results": {
+        "devtools_build_ok": true,
+        "wx_login_ok": true,
+        "project_creation_ok": true,
+        "photo_upload_ok": true,
+        "record_permission_ok": true,
+        "upload_ok": true,
+        "family_correction_ok": true,
+        "story_preview_ok": true,
+        "share_settings_ok": true,
+        "privacy_export_delete_ok": true,
+        "navigation_ok": true
+      }
+    },
+    {
+      "name": "iPhone 14",
+      "platform": "ios",
+      "passed": true,
+      "workflow_results": {
+        "devtools_build_ok": true,
+        "wx_login_ok": true,
+        "project_creation_ok": true,
+        "photo_upload_ok": true,
+        "record_permission_ok": true,
+        "upload_ok": true,
+        "family_correction_ok": true,
+        "story_preview_ok": true,
+        "share_settings_ok": true,
+        "privacy_export_delete_ok": true,
+        "navigation_ok": true
+      }
+    },
+    {
+      "name": "iPhone 15",
+      "platform": "ios",
+      "passed": true,
+      "workflow_results": {
+        "devtools_build_ok": true,
+        "wx_login_ok": true,
+        "project_creation_ok": true,
+        "photo_upload_ok": true,
+        "record_permission_ok": true,
+        "upload_ok": true,
+        "family_correction_ok": true,
+        "story_preview_ok": true,
+        "share_settings_ok": true,
+        "privacy_export_delete_ok": true,
+        "navigation_ok": true
+      }
+    },
+    {
+      "name": "Pixel 7",
+      "platform": "android",
+      "passed": true,
+      "workflow_results": {
+        "devtools_build_ok": true,
+        "wx_login_ok": true,
+        "project_creation_ok": true,
+        "photo_upload_ok": true,
+        "record_permission_ok": true,
+        "upload_ok": true,
+        "family_correction_ok": true,
+        "story_preview_ok": true,
+        "share_settings_ok": true,
+        "privacy_export_delete_ok": true,
+        "navigation_ok": true
+      }
+    },
+    {
+      "name": "Xiaomi 14",
+      "platform": "android",
+      "passed": true,
+      "workflow_results": {
+        "devtools_build_ok": true,
+        "wx_login_ok": true,
+        "project_creation_ok": true,
+        "photo_upload_ok": true,
+        "record_permission_ok": true,
+        "upload_ok": true,
+        "family_correction_ok": true,
+        "story_preview_ok": true,
+        "share_settings_ok": true,
+        "privacy_export_delete_ok": true,
+        "navigation_ok": true
+      }
+    },
+    {
+      "name": "Huawei P60",
+      "platform": "android",
+      "passed": true,
+      "workflow_results": {
+        "devtools_build_ok": true,
+        "wx_login_ok": true,
+        "project_creation_ok": true,
+        "photo_upload_ok": true,
+        "record_permission_ok": true,
+        "upload_ok": true,
+        "family_correction_ok": true,
+        "story_preview_ok": true,
+        "share_settings_ok": true,
+        "privacy_export_delete_ok": true,
+        "navigation_ok": true
+      }
+    }
+  ]
+}

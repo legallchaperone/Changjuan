@@ -1,0 +1,49 @@
+{
+  "spec_confirmed": true,
+  "spec_confirmed_by": ["Founder", "Ops"],
+  "tracker": "linear",
+  "tracker_url": "https://linear.app/changjuan/project/phase-1",
+  "ticket_export_id": "linear_export_YYYYMMDD",
+  "ticket_export_path": "docs/evidence/phase1/phase1-ticket-export.json",
+  "ticket_export_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "tickets_total": 42,
+  "tickets_with_owner": 42,
+  "tickets_with_dependency_status": 42,
+  "tickets_with_dod": 42,
+  "ticket_export_schema": {
+    "required_ticket_fields": [
+      "id",
+      "owner",
+      "dependency_status",
+      "dod",
+      "completion_status",
+      "deliverable_key",
+      "acceptance_evidence_path",
+      "acceptance_evidence_sha256"
+    ],
+    "allowed_completion_statuses": ["done", "completed", "closed"],
+    "required_deliverable_keys": [
+      "wechat_miniprogram_mvp",
+      "h5_entry_page",
+      "admin_dashboard",
+      "fastapi_backend",
+      "celery_worker",
+      "voice_pipeline",
+      "oss_kms_storage",
+      "pii_encryption",
+      "audit_logs",
+      "deletion_worker",
+      "claim_ledger",
+      "family_correction_workflow",
+      "narrative_agent",
+      "verifier_agent",
+      "second_consent_flow",
+      "private_story_page",
+      "pdf_export",
+      "pilot_dashboard",
+      "pilot_data_100_households",
+      "phase1_retrospective",
+      "phase2_go_no_go_decision"
+    ]
+  }
+}

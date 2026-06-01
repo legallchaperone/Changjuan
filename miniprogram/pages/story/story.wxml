@@ -1,0 +1,36 @@
+<view class="page">
+  <view class="panel story-controls">
+    <input placeholder="project_id" value="{{projectId}}" bindinput="onProjectId" />
+    <input placeholder="story_page_id" value="{{storyPageId}}" bindinput="onStoryPageId" />
+    <input placeholder="访问密码，可选" value="{{password}}" bindinput="onPassword" />
+    <button class="button secondary" loading="{{loading}}" bindtap="loadStory">载入故事</button>
+  </view>
+  <view wx:if="{{errorMessage}}" class="panel error">
+    <text>{{errorMessage}}</text>
+  </view>
+  <view wx:if="{{statusMessage}}" class="panel status">
+    <text>{{statusMessage}}</text>
+  </view>
+  <block wx:for="{{chapters}}" wx:for-index="chapterIndex" wx:key="id">
+    <view class="panel story">
+      <text class="chapter">{{item.title}}</text>
+      <text class="body">{{item.body}}</text>
+      <block wx:for="{{item.audio_citations}}" wx:for-index="citationIndex" wx:key="segment_id">
+        <button
+          class="button secondary"
+          data-chapter-index="{{chapterIndex}}"
+          data-citation-index="{{citationIndex}}"
+          bindtap="playAudio"
+        >听原声</button>
+      </block>
+    </view>
+  </block>
+  <view class="panel share">
+    <text wx:if="{{shareUrl}}" class="body">{{shareUrl}}</text>
+    <button class="button" loading="{{loading}}" bindtap="createShareLink">创建分享链接</button>
+    <button class="button secondary" loading="{{loading}}" bindtap="resetShareLink">重置分享链接</button>
+    <button class="button secondary" loading="{{loading}}" bindtap="revokeShareLink">关闭分享链接</button>
+    <button class="button secondary" bindtap="exportPdf">导出 PDF</button>
+    <button class="button" loading="{{loading}}" bindtap="requestSecondConsent">请求二次同意</button>
+  </view>
+</view>

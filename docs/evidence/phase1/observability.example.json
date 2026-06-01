@@ -1,0 +1,13 @@
+{
+  "sentry_event_id": "sentry_event_id_32_hex_...",
+  "otel_trace_id": "otel_trace_id_32_hex_...",
+  "sls_project": "changjuan-prod",
+  "oss_bucket": "changjuan-prod-private",
+  "kms_key_id": "kms_...",
+  "oss_kms_encryption_verified": true,
+  "oss_backup_drill_id": "oss_backup_YYYYMMDD",
+  "db_backup_restore_drill_id": "restore_YYYYMMDD",
+  "oss_purge_drill_id": "oss_purge_YYYYMMDD",
+  "drill_report_path": "docs/evidence/phase1/production-observability-drill.md",
+  "drill_report_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+}

@@ -1,0 +1,47 @@
+# Local environments
+.venv/
+.uv-cache/
+.python-version
+node_modules/
+
+# Secrets and machine-local config
+.env
+.env.*
+!.env.example
+api_key
+*.pem
+*.key
+
+# Python caches and reports
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Frontend caches and builds
+.next/
+apps/*/.next/
+*.tsbuildinfo
+.playwright-cli/
+dist/
+build/
+coverage/
+
+# Local media and generated pipeline output
+scripts/test_audio/*
+!scripts/test_audio/CORPUS.md
+*.mp3
+*.wav
+*.m4a
+*.pipeline.json
+*.narr_ckpt.json
+*.review.txt
+*.review_v2.txt
+*.bundle
+
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/

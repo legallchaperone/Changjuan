@@ -1,0 +1,28 @@
+<view class="page">
+  <view wx:if="{{errorMessage}}" class="panel error">
+    <text>{{errorMessage}}</text>
+  </view>
+  <view wx:if="{{!claims.length && !loading}}" class="panel empty">
+    <text>暂无待核验事实。</text>
+  </view>
+  <block wx:for="{{claims}}" wx:key="id">
+    <view class="panel claim">
+      <text class="priority">{{item.claim_priority}}</text>
+      <text class="claim-text">{{item.claim_text}}</text>
+      <input
+        class="modify-input"
+        placeholder="需要修改时填写更正后的事实"
+        data-id="{{item.id}}"
+        value="{{modifiedTextById[item.id]}}"
+        bindinput="onModifiedText"
+      />
+      <view class="actions">
+        <button bindtap="confirm" data-id="{{item.id}}">确认</button>
+        <button bindtap="modify" data-id="{{item.id}}">修改</button>
+        <button bindtap="unsure" data-id="{{item.id}}">不确定</button>
+        <button bindtap="hide" data-id="{{item.id}}">不公开</button>
+        <button class="danger" bindtap="deleteClaim" data-id="{{item.id}}">删除</button>
+      </view>
+    </view>
+  </block>
+</view>

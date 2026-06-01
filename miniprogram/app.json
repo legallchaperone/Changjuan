@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/project/project",
+    "pages/interview/interview",
+    "pages/corrections/corrections",
+    "pages/story/story",
+    "pages/privacy/privacy"
+  ],
+  "window": {
+    "navigationBarTitleText": "长卷",
+    "navigationBarBackgroundColor": "#f7f5ef",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#f7f5ef"
+  },
+  "permission": {
+    "scope.record": {
+      "desc": "用于录制老人采访原声并生成可追溯证据"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "approvals": {
+    "interview_consent": {
+      "approver": "Name",
+      "role": "legal",
+      "approved_at": "2026-05-17T10:00:00+08:00",
+      "content_path": "docs/legal/interview-consent.md",
+      "version_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "second_consent": {
+      "approver": "Name",
+      "role": "legal",
+      "approved_at": "2026-05-17T10:00:00+08:00",
+      "content_path": "docs/legal/second-consent.md",
+      "version_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "privacy_policy": {
+      "approver": "Name",
+      "role": "legal",
+      "approved_at": "2026-05-17T10:00:00+08:00",
+      "content_path": "docs/legal/privacy-policy.md",
+      "version_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    "deletion_copy": {
+      "approver": "Name",
+      "role": "legal",
+      "approved_at": "2026-05-17T10:00:00+08:00",
+      "content_path": "docs/legal/deletion-copy.md",
+      "version_hash": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  }
+}

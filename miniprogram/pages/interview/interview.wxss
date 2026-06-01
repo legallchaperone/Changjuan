@@ -1,0 +1,48 @@
+.interview {
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  gap: 32rpx;
+}
+.title {
+  display: block;
+  font-size: 36rpx;
+  font-weight: 800;
+}
+.body,
+.hint {
+  color: #667069;
+  line-height: 1.7;
+}
+.consent input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 76rpx;
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+  border: 1rpx solid #d9d0c3;
+  border-radius: 8rpx;
+  background: #fffaf2;
+}
+.record {
+  width: 360rpx;
+  height: 360rpx;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: #1b6b58;
+  color: #ffffff;
+  font-size: 38rpx;
+  font-weight: 800;
+}
+.record.active {
+  background: #a5453d;
+}
+.hint {
+  text-align: center;
+}
+.error {
+  color: #a5453d;
+}
+.status {
+  color: #1b6b58;
+}

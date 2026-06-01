@@ -1,0 +1,33 @@
+page {
+  background: #f7f5ef;
+  color: #1b221e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.page {
+  padding: 32rpx;
+}
+
+.button {
+  height: 88rpx;
+  border-radius: 12rpx;
+  background: #1b6b58;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.secondary {
+  background: #ffffff;
+  color: #1b221e;
+  border: 1rpx solid #dedbd1;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1rpx solid #dedbd1;
+  border-radius: 16rpx;
+  padding: 28rpx;
+}

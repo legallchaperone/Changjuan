@@ -1,0 +1,33 @@
+.claim {
+  margin-bottom: 20rpx;
+}
+.priority {
+  color: #a5453d;
+  font-weight: 800;
+}
+.claim-text {
+  display: block;
+  margin: 14rpx 0;
+  font-size: 32rpx;
+}
+.modify-input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 76rpx;
+  margin: 12rpx 0;
+  padding: 0 20rpx;
+  border: 1rpx solid #d9d0c3;
+  border-radius: 8rpx;
+  background: #fffaf2;
+}
+.actions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12rpx;
+}
+.danger {
+  color: #a5453d;
+}
+.error {
+  color: #a5453d;
+}

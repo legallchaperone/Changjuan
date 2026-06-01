@@ -1,0 +1,28 @@
+<view class="page">
+  <view class="panel form">
+    <input placeholder="故事标题" value="{{title}}" bindinput="onTitle" />
+    <input placeholder="老人称呼，例如 爸爸" value="{{displayName}}" bindinput="onDisplayName" />
+    <input placeholder="关系，例如 father" value="{{relation}}" bindinput="onRelation" />
+    <button class="button" bindtap="createProject">创建并查看押金说明</button>
+  </view>
+  <view wx:if="{{projectId}}" class="panel result">
+    <text>项目已创建：{{projectId}}</text>
+    <text>采访前需上传 {{minimumPhotoCount}}-{{maxPhotoCount}} 张照片，当前 {{photoCount}} 张。</text>
+    <input placeholder="照片说明，可选" value="{{photoCaption}}" bindinput="onPhotoCaption" />
+    <view class="actions">
+      <button class="button" loading="{{uploadingPhotos}}" disabled="{{uploadingPhotos || photoCount >= maxPhotoCount}}" bindtap="pickAndUploadPhotos">上传照片</button>
+      <button class="button secondary" loading="{{loadingPhotos}}" bindtap="loadPhotos">刷新照片</button>
+    </view>
+    <text wx:if="{{internalPhotoHypothesisOnly}}" class="hint">照片 AI 分析只作为内部假设，未经家人确认不会写入故事。</text>
+    <view wx:for="{{photos}}" wx:key="photo_id" class="photo-row">
+      <view class="photo-copy">
+        <text>{{item.caption || item.oss_key}}</text>
+        <text class="hint">{{item.thumbnail_oss_key}}</text>
+      </view>
+      <button size="mini" data-id="{{item.photo_id}}" bindtap="deletePhoto">删除</button>
+    </view>
+    <text>下一步：人工押金、采访同意、照片数量达标后发起采访。</text>
+  </view>
+  <view wx:if="{{statusMessage}}" class="panel status">{{statusMessage}}</view>
+  <view wx:if="{{errorMessage}}" class="panel error">{{errorMessage}}</view>
+</view>

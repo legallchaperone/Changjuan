@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "strict": true,
+    "noImplicitAny": false,
+    "noEmit": true,
+    "types": ["miniprogram-api-typings"],
+    "skipLibCheck": true
+  },
+  "include": ["**/*.ts"]
+}

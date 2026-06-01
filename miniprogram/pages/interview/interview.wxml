@@ -1,0 +1,20 @@
+<view class="page interview">
+  <view class="panel consent">
+    <text class="title">采访前同意</text>
+    <text class="body">本次采访会录音、转写，并用于生成可由家人核验的故事。您可以随时说“今天先到这里”。</text>
+    <input placeholder="project_id" value="{{projectId}}" bindinput="onProjectId" />
+  </view>
+  <view wx:if="{{errorMessage}}" class="panel error">
+    <text>{{errorMessage}}</text>
+  </view>
+  <view wx:if="{{statusMessage}}" class="panel status">
+    <text>{{statusMessage}}</text>
+  </view>
+  <button class="button secondary" bindtap="createConsent">记录采访同意</button>
+  <button class="button secondary" bindtap="createSession">创建采访会话</button>
+  <button class="record {{recording ? 'active' : ''}}" bindtap="startInterview">{{recording ? '采访中' : '开始采访'}}</button>
+  <button class="button secondary" bindtap="endInterview">结束采访</button>
+  <button class="button secondary" bindtap="checkRecovery">检查弱网恢复</button>
+  <text wx:if="{{missingSequenceNumbers.length}}" class="hint">缺失 chunk：{{missingSequenceNumbers}}</text>
+  <text class="hint">音频 chunk 300-500ms，限流 240/min。</text>
+</view>

@@ -1,0 +1,40 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: astral-sh/setup-uv@v5
+      - run: uv run --extra dev pytest -q
+      - run: uv run --extra dev ruff check .
+      - run: uv lock --check
+      - name: Validate Phase 1 evidence templates
+        run: |
+          tmpdir="$(mktemp -d)"
+          cp docs/evidence/phase1/project-management.example.json "$tmpdir/project-management.json"
+          cp docs/evidence/phase1/provider-smoke.example.json "$tmpdir/provider-smoke.json"
+          cp docs/evidence/phase1/wechat-qa.example.json "$tmpdir/wechat-qa.json"
+          cp docs/evidence/phase1/legal-signoff.example.json "$tmpdir/legal-signoff.json"
+          cp docs/evidence/phase1/pilot.example.json "$tmpdir/pilot.json"
+          cp docs/evidence/phase1/observability.example.json "$tmpdir/observability.json"
+          uv run --extra dev python -m scripts.phase1_external_evidence --dir "$tmpdir" --allow-placeholders
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run build --workspace @changjuan/web-admin
+      - run: npm run build --workspace @changjuan/web-h5
+      - run: npm audit --audit-level=moderate

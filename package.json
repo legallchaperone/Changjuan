@@ -1,0 +1,29 @@
+{
+  "name": "changjuan",
+  "private": true,
+  "workspaces": [
+    "apps/web-admin",
+    "apps/web-h5",
+    "packages/shared-types",
+    "packages/clients"
+  ],
+  "scripts": {
+    "dev:admin": "npm run dev --workspace @changjuan/web-admin",
+    "dev:h5": "npm run dev --workspace @changjuan/web-h5",
+    "build": "npm run build --workspace @changjuan/web-admin && npm run build --workspace @changjuan/web-h5",
+    "typecheck": "npm run typecheck --workspaces --if-present && tsc -p miniprogram/tsconfig.json",
+    "lint": "uv run --extra dev ruff check .",
+    "test": "uv run --extra dev pytest",
+    "smoke": "uv run --extra dev pytest tests/unit tests/integration -q"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "overrides": {
+    "postcss": "^8.5.14"
+  },
+  "devDependencies": {
+    "miniprogram-api-typings": "^5.2.1",
+    "typescript": "^5.9.3"
+  }
+}
